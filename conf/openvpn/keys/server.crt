@@ -1,0 +1,73 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=CN, ST=SH, L=ShangHai, O=wy, OU=wy, CN=wy CA/emailAddress=whingercn@163.com
+        Validity
+            Not Before: May  4 06:15:18 2014 GMT
+            Not After : May  1 06:15:18 2024 GMT
+        Subject: C=CN, ST=SH, L=ShangHai, O=wy, OU=wy, CN=server/emailAddress=whingercn@163.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:c0:cd:85:14:b2:63:1a:f6:cb:70:19:d2:e8:3f:
+                    d2:4a:ff:1c:4a:df:9a:f7:13:ec:bd:e1:98:72:ff:
+                    ef:c6:7b:5a:6b:e4:13:54:f1:f1:cb:2e:1f:4c:c8:
+                    da:5a:db:19:56:fe:35:5b:6f:0e:a8:34:46:02:3a:
+                    b1:c8:d4:32:f2:9a:c1:3b:87:ae:a4:ef:8c:b9:e5:
+                    93:84:45:23:94:33:fd:d8:6f:15:50:81:d4:c4:a6:
+                    c3:78:28:63:5a:1f:10:c1:83:37:3c:50:02:76:7a:
+                    57:e7:37:e8:3d:82:68:ad:72:cd:30:13:0b:4d:71:
+                    ae:cd:b1:28:4a:3a:59:f6:f3
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Server
+            Netscape Comment: 
+                Easy-RSA Generated Server Certificate
+            X509v3 Subject Key Identifier: 
+                71:45:C8:56:FF:F0:F9:14:DD:18:BF:FC:67:32:F8:D3:DA:27:B3:B8
+            X509v3 Authority Key Identifier: 
+                keyid:F1:23:F0:86:44:78:62:58:0F:2A:6C:72:0F:22:FD:F9:46:2F:A4:F9
+                DirName:/C=CN/ST=SH/L=ShangHai/O=wy/OU=wy/CN=wy CA/emailAddress=whingercn@163.com
+                serial:9B:21:A8:1A:C0:5B:05:13
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+    Signature Algorithm: sha1WithRSAEncryption
+        b3:a0:d9:7b:23:b2:e3:76:83:c7:11:8d:22:8c:47:da:7b:ad:
+        25:79:af:c3:54:97:e0:d1:9c:4e:b2:a6:27:31:ec:cc:0b:d1:
+        4c:73:25:ae:9a:29:c2:d8:a9:cb:db:d0:a4:4d:f0:8a:59:d6:
+        2d:73:16:13:77:d8:c7:8b:da:fb:c5:5c:9d:de:0b:eb:f4:f4:
+        17:28:f4:5c:38:33:11:b7:ac:50:a9:42:43:55:05:f1:b5:a8:
+        6e:8e:4c:51:d1:16:d0:85:dc:9a:64:24:46:3d:c7:ff:65:aa:
+        ac:d0:ae:10:b0:0e:fb:47:e1:bd:bc:ea:ec:db:1c:3c:82:ac:
+        04:c7
+-----BEGIN CERTIFICATE-----
+MIIDsjCCAxugAwIBAgIBATANBgkqhkiG9w0BAQUFADB5MQswCQYDVQQGEwJDTjEL
+MAkGA1UECBMCU0gxETAPBgNVBAcTCFNoYW5nSGFpMQswCQYDVQQKEwJ3eTELMAkG
+A1UECxMCd3kxDjAMBgNVBAMTBXd5IENBMSAwHgYJKoZIhvcNAQkBFhF3aGluZ2Vy
+Y25AMTYzLmNvbTAeFw0xNDA1MDQwNjE1MThaFw0yNDA1MDEwNjE1MThaMHoxCzAJ
+BgNVBAYTAkNOMQswCQYDVQQIEwJTSDERMA8GA1UEBxMIU2hhbmdIYWkxCzAJBgNV
+BAoTAnd5MQswCQYDVQQLEwJ3eTEPMA0GA1UEAxMGc2VydmVyMSAwHgYJKoZIhvcN
+AQkBFhF3aGluZ2VyY25AMTYzLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkC
+gYEAwM2FFLJjGvbLcBnS6D/SSv8cSt+a9xPsveGYcv/vxntaa+QTVPHxyy4fTMja
+WtsZVv41W28OqDRGAjqxyNQy8prBO4eupO+MueWThEUjlDP92G8VUIHUxKbDeChj
+Wh8QwYM3PFACdnpX5zfoPYJorXLNMBMLTXGuzbEoSjpZ9vMCAwEAAaOCAUcwggFD
+MAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgZAMDQGCWCGSAGG+EIBDQQnFiVF
+YXN5LVJTQSBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRlMB0GA1UdDgQWBBRx
+RchW//D5FN0Yv/xnMvjT2iezuDCBqwYDVR0jBIGjMIGggBTxI/CGRHhiWA8qbHIP
+Iv35Ri+k+aF9pHsweTELMAkGA1UEBhMCQ04xCzAJBgNVBAgTAlNIMREwDwYDVQQH
+EwhTaGFuZ0hhaTELMAkGA1UEChMCd3kxCzAJBgNVBAsTAnd5MQ4wDAYDVQQDEwV3
+eSBDQTEgMB4GCSqGSIb3DQEJARYRd2hpbmdlcmNuQDE2My5jb22CCQCbIagawFsF
+EzATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBaAwDQYJKoZIhvcNAQEF
+BQADgYEAs6DZeyOy43aDxxGNIoxH2nutJXmvw1SX4NGcTrKmJzHszAvRTHMlrpop
+wtipy9vQpE3wilnWLXMWE3fYx4va+8Vcnd4L6/T0Fyj0XDgzEbesUKlCQ1UF8bWo
+bo5MUdEW0IXcmmQkRj3H/2WqrNCuELAO+0fhvbzq7NscPIKsBMc=
+-----END CERTIFICATE-----
