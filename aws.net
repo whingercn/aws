@@ -1,0 +1,147 @@
+[root@ip-172-31-9-131 ~]# netstat -anp
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:1194                0.0.0.0:*                   LISTEN      7596/openvpn        
+tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      6653/mysqld         
+tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      11691/nginx.conf    
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      987/sshd            
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      1046/master         
+tcp        0      0 0.0.0.0:1723                0.0.0.0:*                   LISTEN      5341/pptpd          
+tcp        0      0 172.31.9.131:1723           192.99.145.182:27344        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:4946         SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:9459         SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:17871        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:43127        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:9290         SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:9508         SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:22251        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:26010        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:13538        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:61482        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:20892        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:40534        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:38505        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:63841        SYN_RECV    -                   
+tcp        0      0 172.31.9.131:1723           192.99.145.182:45044        SYN_RECV    -                   
+tcp        0   3112 172.31.9.131:22             61.172.240.228:49170        ESTABLISHED 4529/0              
+udp        0      0 0.0.0.0:68                  0.0.0.0:*                               864/dhclient        
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node PID/Program name    Path
+unix  2      [ ACC ]     STREAM     LISTENING     3251   1046/master         private/local
+unix  2      [ ACC ]     STREAM     LISTENING     3255   1046/master         private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     3259   1046/master         private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     3263   1046/master         private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     3267   1046/master         private/scache
+unix  2      [ ACC ]     STREAM     LISTENING     3271   1046/master         private/maildrop
+unix  2      [ ACC ]     STREAM     LISTENING     3275   1046/master         private/old-cyrus
+unix  2      [ ACC ]     STREAM     LISTENING     3279   1046/master         private/cyrus
+unix  2      [ ACC ]     STREAM     LISTENING     3283   1046/master         private/uucp
+unix  2      [ ACC ]     STREAM     LISTENING     3287   1046/master         private/ifmail
+unix  2      [ ACC ]     STREAM     LISTENING     3291   1046/master         private/bsmtp
+unix  2      [ ACC ]     STREAM     LISTENING     7273008 910/syslog-ng       /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     2581   948/hald            @/var/run/hald/dbus-5H28DJPB8j
+unix  2      [ ACC ]     STREAM     LISTENING     2582   948/hald            @/var/run/hald/dbus-11u5NUs6Qi
+unix  2      [ ]         DGRAM                    768    257/udevd           @/org/kernel/udev/udevd
+unix  2      [ ACC ]     STREAM     LISTENING     1642100 6653/mysqld         /tmp/mysql.sock
+unix  2      [ ACC ]     STREAM     LISTENING     1642131 3865/php-fpm: pool  /tmp/php-cgi.sock
+unix  2      [ ]         DGRAM                    2590   948/hald            @/org/freedesktop/hal/udev_event
+unix  2      [ ACC ]     STREAM     LISTENING     2521   923/dbus-daemon     /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     7333882 4529/0              /tmp/ssh-bbBiTM4529/agent.4529
+unix  2      [ ACC ]     STREAM     LISTENING     2920   967/nscd            /var/run/nscd/socket
+unix  2      [ ACC ]     STREAM     LISTENING     3192   1046/master         public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     3199   1046/master         private/tlsmgr
+unix  2      [ ACC ]     STREAM     LISTENING     3203   1046/master         private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     3207   1046/master         private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     3211   1046/master         private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     3215   1046/master         private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     3219   1046/master         private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     3223   1046/master         public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     3227   1046/master         private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     3231   1046/master         private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     3235   1046/master         private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     3239   1046/master         public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     3243   1046/master         private/error
+unix  2      [ ACC ]     STREAM     LISTENING     3247   1046/master         private/discard
+unix  3      [ ]         STREAM     CONNECTED     7333874 910/syslog-ng       /dev/log
+unix  3      [ ]         STREAM     CONNECTED     7333873 4529/0              
+unix  3      [ ]         STREAM     CONNECTED     7333821 910/syslog-ng       /dev/log
+unix  3      [ ]         STREAM     CONNECTED     7333819 4528/pickup         
+unix  3      [ ]         STREAM     CONNECTED     6646282 11691/nginx.conf    
+unix  3      [ ]         STREAM     CONNECTED     6646281 11691/nginx.conf    
+unix  3      [ ]         STREAM     CONNECTED     6179659 910/syslog-ng       /dev/log
+unix  3      [ ]         STREAM     CONNECTED     6179658 5341/pptpd          
+unix  3      [ ]         STREAM     CONNECTED     4183584 910/syslog-ng       /dev/log
+unix  3      [ ]         STREAM     CONNECTED     4183583 7596/openvpn        
+unix  2      [ ]         STREAM                   1642132 3865/php-fpm: pool  
+unix  3      [ ]         STREAM     CONNECTED     1642130 6681/php-fpm.conf)  
+unix  3      [ ]         STREAM     CONNECTED     1642129 6681/php-fpm.conf)  
+unix  3      [ ]         STREAM     CONNECTED     6971   910/syslog-ng       /dev/log
+unix  3      [ ]         STREAM     CONNECTED     6970   864/dhclient        
+unix  3      [ ]         STREAM     CONNECTED     3367   910/syslog-ng       /dev/log
+unix  3      [ ]         STREAM     CONNECTED     3366   1056/qmgr           
+unix  3      [ ]         STREAM     CONNECTED     3294   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3293   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3290   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3289   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3286   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3285   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3282   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3281   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3278   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3277   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3274   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3273   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3270   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3269   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3266   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3265   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3262   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3261   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3258   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3257   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3254   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3253   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3250   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3249   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3246   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3245   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3242   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3241   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3238   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3237   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3234   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3233   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3230   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3229   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3226   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3225   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3222   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3221   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3218   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3217   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3214   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3213   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3210   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3209   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3206   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3205   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3202   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3201   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3198   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3197   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3195   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3194   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3191   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3190   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3188   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3187   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     3185   910/syslog-ng       /dev/log
+unix  3      [ ]         STREAM     CONNECTED     3184   1054/crond          
+unix  3      [ ]         STREAM     CONNECTED     3154   910/syslog-ng       /dev/log
+unix  3      [ ]         STREAM     CONNECTED     3153   1046/master         
+unix  3      [ ]         STREAM     CONNECTED     2868   923/dbus-daemon     /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     2867   948/hald            
+unix  3      [ ]         STREAM     CONNECTED     2585   948/hald            @/var/run/hald/dbus-11u5NUs6Qi
+unix  3      [ ]         STREAM     CONNECTED     2584   949/hald-runner     
+unix  3      [ ]         STREAM     CONNECTED     2525   923/dbus-daemon     
+unix  3      [ ]         STREAM     CONNECTED     2524   923/dbus-daemon 
