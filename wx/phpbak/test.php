@@ -1,0 +1,21 @@
+<?php
+                $url="http://t.weather.sojson.com/api/weather/city/101020100";
+                $weatherJson = file_get_contents($url);
+                $weather = json_decode($weatherJson, true);
+                $city=$weather['cityInfo']['city'];
+                $forecast=$weather['data']['forecast'];
+		$today=$forecast[0];
+                $high=$today['high'];
+                $low=$today['low'];
+                $ymd=$today['ymd'];
+                $type=$today['type'];
+                $shidu=$weather['data']['shidu'];
+                $pm25=$weather['data']['pm25'];
+                $quality=$weather['data']['quality'];
+		$tom=$forecast[1];
+                $hight=$tom['high'];
+                $lowt=$tom['low'];
+                $ymdt=$tom['ymd'];
+                $typet=$tom['type'];
+                $contentStr=$city.$ymd." 天气:\n".$type.",".$low.",".$high.":\n湿度:".$shidu.", PM2.5:".$pm25.", 空气质量:".$quality."\n--------\n".$ymdt." 天气:\n".$typet.",".$lowt.",".$hight;
+echo $contentStr;
