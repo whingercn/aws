@@ -8,10 +8,13 @@ from wechatpy.exceptions import InvalidSignatureException
 from wechatpy import parse_message
 from wechatpy.replies import TextReply
 import os
+import redis
 from openai import OpenAI
 from sparkai.llm.llm import ChatSparkLLM, ChunkPrintHandler
 from sparkai.core.messages import ChatMessage
 import re
+import requests
+import json
 
 token = "whinger"
 
@@ -79,12 +82,34 @@ def aireply(con):
     res = str(a)
     match = re.search(r"text='([^']*)'", res)
     extracted_text = match.group(1)
+    r = redis.Redis(host='localhost', port=6379, db=0)
+    r.set('xfreply',extracted_text)
+    r.close()
     return extracted_text
+
+def stock():
+    url = "http://hq.sinajs.cn/list=sz002097"
+    headers = {
+        'Referer': 'https://finance.sina.com.cn',
+    }
+    response = requests.get(url, headers=headers)
+    data = response.text
+    parts = data.split('"')
+    name = parts[1].split(',')[0]
+    real_price = data.split(',')[3]
+    return (name + ":" + real_price)
 
 def handlemsg(data):
     msg = parse_message(data)
     print(msg)
-    content = aireply(msg.content)
+    if msg.content.startswith("11"):
+        r = redis.Redis(host='localhost', port=6379, db=0)
+        content = r.get('xfreply').decode('utf-8')
+        r.close()
+    elif msg.content.startswith("22"):
+        content = stock()
+    else:
+        content = aireply(msg.content)
     xml = txtreply(msg, content)
     return [xml]
 
